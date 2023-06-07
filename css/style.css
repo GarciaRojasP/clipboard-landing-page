@@ -1,0 +1,400 @@
+:root{
+
+    /*==================== COLOR PRIMARY ====================*/
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+
+    /*==================== COLOR NEUTRAL ====================*/
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+    
+    /*==================== TYPOGRAPHY ====================*/
+    --body: 'Bai Jamjuree', sans-serif;
+
+    /*==================== FONT ====================*/
+    --font-normal: 18px;
+    /*--font-normal-big: 1.1rem;
+    --font-big: 1.5rem;*/
+
+    /*==================== FONT WEIGHT ====================*/
+    --w-regular: 400; 
+    --w-semibold: 600; 
+
+    /*==================== PADDING ====================*/
+    --p-container: 8%;
+
+    /*==================== lINE HEIGHT ====================*/
+    --line-height: 1.6;
+
+}
+
+@media screen and (min-width:768px) {
+    :root{
+        /*==================== PADDING ====================*/
+    --p-container: 25%;
+    }
+}
+
+/*==================== STYLE GENERAL ====================*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2{
+    margin:0;
+}
+
+body{
+    font-family: var(--body);
+    font-size: var(--font-normal);
+    line-height: var(--line-height);
+    font-weight: var(--w-regular);
+}
+
+.flex{
+    display: flex;
+    gap: 2em;
+}
+
+.container{
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 8em var(--p-container) 10%;
+}
+
+/*==================== HERO ====================*/
+.hero{
+    background-image: url("/images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+
+.hero__img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 4.5em;
+}
+
+.hero__title{
+    color: var(--dark-grayish-blue);
+    margin-bottom: 1rem;
+    font-weight: var(--w-semibold);
+    line-height: 1.2;
+}
+
+.hero__paragraph{
+    color: var(--grayish-blue);
+}
+
+/*==================== BUTTONS ====================*/
+.buttons{
+    margin-top: 2.3em;
+    flex-direction: column;
+    text-align: center;
+}
+
+.buttons__cta{
+    background-color: var(--strong-cyan);
+    color: #fff;
+    border-radius: 2em;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+    font-weight: var(--w-semibold);
+    padding: 1em 0;
+    box-shadow: 0 0px 5px -2px var(--strong-cyan), 0 -3px 1px inset hsla(0, 0%, 0%, 0.2);
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.buttons__cta--blue{
+    box-shadow: 0 0px 5px -2px var(--light-blue), 0 -3px 1px inset hsla(0, 0%, 0%, 0.2);
+    background-color: var(--light-blue);
+}
+
+.buttons__cta:hover{
+    opacity: 0.7;
+}
+/*==================== TRACK ====================*/
+.track__texts{
+    text-align: center;
+}
+
+.track__container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    color: var(--dark-grayish-blue);
+    font-size: 2rem;
+    font-weight: var(--w-semibold);
+}
+
+.paragraph{
+   color: var(--grayish-blue);
+   margin-top: 1.5rem;
+}
+
+.track__img{
+    width: 90%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 3.5em;
+}
+
+.track__articles{
+    flex-direction: column;
+    gap: 3.5em;
+    margin-top: 2.5em;
+    text-align: center;
+    width: 70%;
+}
+
+.track__offer{
+    color: var(--dark-grayish-blue);
+    font-size: 1.5rem;
+}
+
+.track__copy{
+    margin-top: 0.7em;
+    color: var(--grayish-blue);
+}
+/*==================== CLIPBOARD ====================*/
+.clipboard{
+    text-align: center;
+}
+
+.clipboard__texts{
+    padding: 5rem var(--p-container);
+}
+
+.clipboard__img{
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.clipboard__offer{
+    margin-top: 4em;
+    flex-direction: column;
+    gap: 3.5em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.clipboard__icon{
+    width: 45px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+}
+
+.clipboard__title{
+    font-size: 1.5em;
+    color: var(--dark-grayish-blue);
+    font-weight: var(--w-semibold);
+}
+
+.clipboard__paragraph{
+    color: var(--grayish-blue);
+    margin-top: 1em;
+}
+
+/*==================== BRANDS ====================*/
+.brands{
+    flex-direction: column;
+    align-items: center;
+    gap: 4.5em;
+    padding: 8em 10% 0;
+    overflow: hidden;
+}
+/*==================== ACTION ====================*/
+.action{
+    text-align: center;
+}
+
+/*==================== FOOTER ====================*/
+.footer{
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.footer__container{
+    flex-direction: column;
+    gap: 0;
+    width: 80%;
+    margin: 0 auto;
+    padding: 3em 0;
+}
+
+.footer__img{
+    width: 100%;
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer__links{
+    margin: 4em 0;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.footer__link{
+    color: var(--dark-grayish-blue);
+}
+
+.footer__link:hover{
+    text-decoration: underline;
+}
+
+.footer__social{
+    justify-content: center;
+    gap: 3em;
+    flex-wrap: wrap;
+}
+
+.footer__icon{
+    color: var(--dark-grayish-blue);
+    font-size: 2rem;
+}
+
+.footer__icon:hover{
+    font-size: 2.1rem;
+}
+
+@media screen and (min-width:768px) {
+    /*==================== HERO ====================*/
+    .hero{
+        background-image: url("/images/bg-header-desktop.png");
+    }
+
+    .hero__title{
+        font-size: 2.5rem;
+    }
+
+    /*==================== BUTTONS ====================*/
+    .buttons{
+        margin-top: 3em;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .buttons__cta{
+        padding: 1em 3em;
+    }
+
+    /*==================== TRACK ====================*/
+    .title{
+        font-size: 2.5rem;
+    }
+
+    .track__texts{
+        padding: 0 var(--p-container) 5rem;
+    }
+
+    .track__container{
+        flex-direction: row;
+    }
+
+    .track__img{
+        overflow: hidden;
+        width: 50%;
+        max-width: none;
+
+        position: relative;
+        right: 7%;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+    }
+
+    .track__articles{
+        width: 40%;
+        max-width: 380px;
+        gap: 3em;
+        margin: 0 auto 0 5rem;
+        text-align: left;
+        align-self: center;
+    }
+
+    /*==================== CLIPBOARD ====================*/
+
+    .clipboard__img{
+        max-width: 60%;
+    }
+
+    .clipboard__offer{
+        flex-direction: row;
+        gap: 2em;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .clipboard__item{
+        flex: 1; /*grow:1 shrink:1 basis: 0 --> Para que se distribuya equitativamente*/
+    }
+
+    /*==================== BRANDS ====================*/
+    .brands{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2em;
+    }
+
+    .brands__item{
+        min-width: 100px;
+        max-width: 130px;
+        flex: 1;
+    }
+
+    /*==================== FOOTER ====================*/
+    .footer__container{
+        flex-direction: row;
+        gap: 3em;
+        align-items: center;
+    }
+
+    .footer__img{
+        width: 70px;
+    }
+
+    .footer__links{
+        margin: 0;
+        height: 6em;
+        flex: 1 1 90%;
+        gap: 1em;
+        align-items: center;
+        align-content: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+
+    .footer__link{
+        width: 28%;
+        flex: 1;
+    }
+
+    .footer__social{
+        gap: 1em;
+        margin-left: auto;
+        flex-wrap: nowrap;
+    }
+
+}
