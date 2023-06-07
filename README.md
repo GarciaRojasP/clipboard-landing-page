@@ -21,12 +21,12 @@ Esto es una solución de la [Clipboard landing page challenge on Frontend Mentor
 
 ### Screenshot
 
-![]()
+![clipboard](https://github.com/GarciaRojasP/clipboard-landing-page/assets/119550417/2e447fc3-0ff3-44f9-bf8c-2fdfdd3ab66e)
 
 ### Links
 
-- Ver código: [Clipboard landing page]()
-- Ver demo: [Clipboard landing page]()
+- Ver código: [Clipboard landing page](https://github.com/GarciaRojasP/clipboard-landing-page)
+- Ver demo: [Clipboard landing page](https://clipboard-landing-page-blue-kappa.vercel.app/)
 
 ## Mi proceso
 
